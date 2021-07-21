@@ -5,11 +5,17 @@ export = class Manager {
         let keyArray = [];
         
         for (let key of keywords) {
-            let k = docKeys.find(dk => dk.name === key);
+            let arg = key.startsWith("$") ? key : `$${key}`;
+            console.log(arg)
+            let k = docKeys.find(dk => dk.name === arg);
             if (!k) return;
             keyArray.push(k);
         }
 
         return keyArray;
+    }
+
+    searchTypes(types: string) {
+        
     }
 }
