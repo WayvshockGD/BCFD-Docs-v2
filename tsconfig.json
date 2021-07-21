@@ -1,0 +1,15 @@
+{
+    "extends": "ts-node/node12/tsconfig.json",
+    "ts-node": {
+        "transpileOnly": true,
+        "files": true,
+    },
+    "compilerOptions": {
+        "outDir": "./build",
+        "module": "CommonJS",
+        "target": "ESNext",
+        "allowJs": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true
+    }
+}
